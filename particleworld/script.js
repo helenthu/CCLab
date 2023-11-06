@@ -1,7 +1,7 @@
 // CCLab Mini Project - 9.R Particles Template
 
-let NUM_OF_PARTICLES = 300; // Decide the initial number of particles.
-
+let NUM_OF_PARTICLES = 400; // Decide the initial number of particles.
+let NUM_OF_CLOUDS = 30;
 let rain = [];
 let cloud = [];
 let wave = [];
@@ -13,13 +13,17 @@ function setup() {
   // generate particles
   for (let i = 0; i < NUM_OF_PARTICLES; i++) {
     rain[i] = new Rain(random(width), random(height));
-    cloud[i] = new Cloud(random(width), random(height));
+                       
     wave[i] = new Wave(random(width), random(height));
+    
+    if (i < NUM_OF_CLOUDS) {
+      cloud[i] = new Cloud(random(width), random(10, 100));
+    }
   }
 }
 
 function draw() {
-  background(64, 65, 84);
+  background(60, 60, 80);
 
   // update and display
   for (let i = 0; i < rain.length; i++) {
@@ -28,8 +32,9 @@ function draw() {
     r.display();
     
     let c = cloud[i];
+    if (c) {
     c.display();
-    
+    }
     let w = wave[i];
     w.update();
     w.display();
