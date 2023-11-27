@@ -1,0 +1,61 @@
+#box1{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#box2{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+
+    display: inline-block;
+
+}
+
+#box3{
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#box4{
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#box5{
+    background-color: yellowgreen;
+}
+
+#box6{
+    background-color: yellowgreen;
+}
+
+#box7{
+    background-color: yellowgreen;
+    display: block;
+}
+
+#box8{
+    background-color: yellowgreen;
+    display: block;
+}
+
+#box9{
+    background-color: yellowgreen;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#box10{
+    background-color: yellowgreen;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}

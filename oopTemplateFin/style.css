@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+
+#interfaces{
+  position: relative;
+  top:3px;
+  left: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 50%;
+  /* height: 100px; */
+
+}
