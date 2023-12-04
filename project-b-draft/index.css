@@ -1,20 +1,35 @@
+#home{
+    text-align: center;
+    text-shadow: rgb(255, 223, 223) 5px 0 5px;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(255, 172, 18);
+    width:45px;
+    height:fit-content;
+    padding:10px;
+    margin:5%;
+    border: solid rgb(255, 111, 0);
+    border-width: 6px;
+}
+
+
 body{
-    background-image: url('livingroom.png');
+    background-color: rgb(239, 215, 224);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
     padding: 0;
-    text-align: center;
 
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-#home{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 
 #sketch{
     text-align: center;

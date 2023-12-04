@@ -21,22 +21,24 @@ let mySound;
 let songLP;
 
 
+function preload(){
 
-function preload() {
-  img = loadImage("livingroom.png");
-  radio = loadImage("radio.png");
-  musicnote = loadImage("musicnote.png");
-  musicnote2 = loadImage("musicnote2.png");
-  mySound = loadSound("LP.mp3");
-  bubblesound = loadSound("bubblesound.mp3");
-  watersound = loadSound("water.mp3");
-  teethbrushingsound = loadSound("teethbrushing.mp3");
+  img = loadImage("assets/livingroomcopy.png");
+  radio = loadImage("assets/radio.png");
+  musicnote = loadImage("assets/musicnote.png");
+  musicnote2 = loadImage("assets/musicnote2.png");
+  mySound = loadSound("assets/LP.mp3");
+  bubblesound = loadSound("assets/bubblesound.mp3");
+  watersound = loadSound("assets/water.mp3");
+  teethbrushingsound = loadSound("assets/teethbrushing.mp3");
 }
+
 
 
 
 //////setup
 function setup() {
+
   
   button = createButton("🔈");
   button.mousePressed(togglePlaying);
@@ -106,6 +108,8 @@ function setup() {
 
 //////draw
 function draw() {
+
+
   image(img, 0, 0, 800, 600);
   image(radio, 150, 340, 100, 100);
   
